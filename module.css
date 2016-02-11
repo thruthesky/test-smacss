@@ -1,0 +1,13 @@
+header {
+	background: black;
+	color: lightblue;
+}
+
+footer {
+	background: #dfdfdf;
+}
+
+section.content {
+	background: blue;
+	color:white;
+}

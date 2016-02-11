@@ -1,0 +1,21 @@
+.l-header {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	height:50px;
+}
+
+.l-content {
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+
+.l-footer {
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	height:50px;
+}

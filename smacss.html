@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="base.css"><!-- base HTML -->
+<link rel="stylesheet" href="layout.css"><!-- for Layout -->
+<link rel="stylesheet" href="module.css"><!-- for components. modules. -->
+<link rel="stylesheet" href="state.css"><!-- for state that works with Javascript -->
+<link rel="stylesheet" href="theme.css"><!-- thems for each site ( theme ) -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+
+<script>
+$(function(){
+	$('header').click(function(){
+		$('.remove-states').click();
+		$(this).addClass('red');
+	});
+	$('h3').click(function(){
+		$('.remove-states').click();
+		$('header').addClass('grey');
+	});
+	$('footer').click(function(){
+		$('.remove-states').click();
+		$('header').addClass('green');
+	});
+	$('.remove-states').click(function(){
+		$('header')
+		.removeClass('red')
+		.removeClass('grey')
+		.removeClass('green');
+	});
+});
+</script>
+<body>
+
+<header class='l-header'>
+	<h1>SMACSS TEST Page</h1>
+</header>
+
+
+<section class='content l-content'>
+	<h3>This is Content</h3>
+	<button class='remove-states'>Remove states</button>
+	<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;
+	<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;
+	<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;
+	<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;
+	<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;
+	<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;
+	<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;<p>Hello</p>&nbsp;
+	<h3>This is the END of Content</h3>
+</section>
+
+<footer class='l-footer'>
+	<h2>This is Footer</h2>
+</footer>
+
+
+</body>
+
